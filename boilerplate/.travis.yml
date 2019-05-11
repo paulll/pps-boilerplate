@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- "node"
+before_script:
+- npm install -g parcel
+script:
+- parcel build ./views/*.pug --public-url "./"
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: false
+  target-branch: gh-pages
+  local-dir: dist
+  on:
+    branch: master
