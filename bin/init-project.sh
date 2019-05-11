@@ -17,7 +17,7 @@ git init
 git add .
 git commit -m "initital"
 hub create
-git push
+git push -u origin master
 set +v
 
 echo "Done! "
