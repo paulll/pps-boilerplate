@@ -15,5 +15,5 @@ Simple boilerplate for web applications, with:
 3. save token locally and encrypt it (`gpg -c`)
 4. create symlink to `bin/init-project.sh` from any directory in `$PATH` (`~/bin` in my case, for example)
 5. edit `bin/init-project.sh`:
-  - change `~/secure/travis-github.token.gpg` to gpg-encrypted token file
-  - change `paulll.cc` to your github pages domain (basically %username%.github.io)
+    - change `~/secure/travis-github.token.gpg` to gpg-encrypted token file
+    - change `paulll.cc` to your github pages domain (basically %username%.github.io)
